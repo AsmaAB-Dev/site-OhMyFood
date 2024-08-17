@@ -1,0 +1,412 @@
+/* Par defaut*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* Entete */
+
+header {
+    height: 113px;
+    width: 100%;
+    
+}
+
+.logo{
+    height: 63px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 15%;
+    height: 40%;
+    margin-top: 18px;
+}
+
+header .location {
+    font-size: 16px;
+    background-color: rgba(234, 234, 234, 1);
+    align-items: center;
+    height:50px;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin-right: 15px;
+}
+
+/***Intro***/
+.intro {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
+    height: 280px;
+}
+
+.intro h1 {
+    font-size: 34px;
+    padding-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+/***** ANIMATION CSS 1******/
+
+.explore-button {
+    background-color: #b24de6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    width: 218px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color:  #c082e6;
+    cursor: pointer;
+}
+/* fonctionnement*/
+
+.fonctionnement {
+
+    margin-top: 40px;
+    height: 200px;
+    width: 100%;
+}
+
+.fonctionnement h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.steps {
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 73px;
+    border-radius: 25px;
+    width: 30%;
+}
+
+.step .number {
+    width: 24px;
+    height: 24px;
+    background-color: #c25ef6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.search-button{
+    background-color: #eee;
+    color: black;
+    width: 100%;
+    height: 73px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+.step-icon{
+    margin-right: 10px;
+}
+
+
+/************************************************************************/
+/***** small devices****/
+@media (max-width: 767.98px) {
+
+/* Entete */
+
+header img{
+    width: 40%;
+
+}
+
+/* Introduction */
+
+.intro h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* fonctionnement*/
+
+.fonctionnement {
+    height: 440px;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 73px;
+
+    border-radius: 25px;
+}
+
+.step .number {
+    width: 24px;
+    height: 24px;
+    background-color: #c25ef6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.search-button{
+    background-color: #eee;
+    color: black;
+    width: 100%;
+    height: 73px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+.step-icon{
+    margin-right: 10px;
+}
+
+/* Restaurants */
+
+.restaurants {
+
+    background-color: #eee;
+}
+
+.restaurants h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 340px;
+    height: 251px;
+    margin-left: 30px;
+}
+
+.restaurant img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.restaurant-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.restaurant-info p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.restaurant a{
+    text-decoration: none;
+}
+
+.badge {
+    background-color: #5ef6c3;
+    color: rgb(255, 255, 255);
+    padding: 2px 8px;
+    width: 70px;
+    font-size: 12px;
+    position: relative;
+    bottom: 230px;
+    left: 250px;
+
+}
+
+/**** ANIMATION CSS 2****/
+.favorite-button {
+    background: none;
+    border: none;
+    color: #080808;
+    cursor: pointer;
+    font-size: 24px;
+    left: 280px;
+    bottom: 60px;
+    position: relative;
+    width: 30px;
+    transition: #b24de6 0.3s ease;
+}
+
+.favorite-button.active {
+    color: #b24de6;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(43, 42, 42);
+}
+h4{
+    color: white;
+    width: 139px;
+    height: 27px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: "Shrikhand", serif;
+}
+footer nav{
+    width: 100%;
+    height: 186px;
+}
+
+footer nav ul {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 15px;
+    line-height: 20px;
+    font-size: 16px;
+    gap: 10px;
+    list-style: none;
+}
+.icon-footer{
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #f8f5fa;
+}
+}
