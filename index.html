@@ -2,21 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scale=none">
     <title>OhMyFood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,15 +38,16 @@
             <div class="steps">
                 <div class="step">
                     <span class="number">1</span>
-                    <button class="search-button"><i class="fa-solid fa-mobile-screen-button step-icon"></i>Choisissez un restaurant</button>
+                    <button class="search-button"><i class="fa-solid fa-mobile-screen-button step-icon"></i>
+                        <span>Chercher un restaurant</span> </button>
                 </div>
                 <div class="step">
                     <span class="number">2</span>
-                    <button class="search-button"><i class="fa-solid fa-list step-icon"></i>Composez votre menu</button>
+                    <button class="search-button"><i class="fa-solid fa-list step-icon"></i><span>Trouver votre menu</span> </button>
                 </div>
                 <div class="step">
                     <span class="number">3</span>
-                    <button class="search-button"><i class="fa-solid fa-store step-icon"></i>Dégustez au restaurant</button>
+                    <button class="search-button"><i class="fa-solid fa-store step-icon"></i><span>Dégustez au restaurant</span></button>
                 </div>
             </div>
         </section>
@@ -60,50 +55,68 @@
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurant-list">
-
-                
                 <div class="restaurant">
-                    <a href="./restaurants/la-palette-du-gout/lapalettedugout.html">
-                    <img src="./assets/images/ohmyfood/images/restaurants/lapalette.jpg" alt="La palette du goût">
+                    <a href="./restaurants/la-palette-du-gout/lapalette.html">
+                    <div class="restaurant-badge">
+                        <img src="./assets/images/ohmyfood/images/restaurants/lapalette.jpg" alt="La palette du goût">
+                        <span class="badge">Nouveau</span>
+                    </div>
                     <div class="restaurant-info">
                         <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <span class="badge">Nouveau</span></a>
-                        <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+                        <p>Ménilmontant</p></a>
+                        <input type="checkbox" class="favorite-checkbox" id="favorite1">
+                        <label for="favorite1" class="favorite-button">
+                            <i class="far fa-heart heart-empty"></i>
+                            <i class="fas fa-heart heart-filled"></i>
+                        </label>             
                     </div> 
                 </div>
 
                
                 <div class="restaurant">
-                    <a href="./restaurants/la-note-enchantée/lanoteenchantee.html">
-                    <img src="./assets/images/ohmyfood/images/restaurants/lanote.jpg" alt="La note enchantée">
+                    <a href="./restaurants/la-note-enchantee/lanoteenchantee.html">
+                    <div class="restaurant-badge">
+                        <img src="./assets/images/ohmyfood/images/restaurants/lanote.jpg" alt="La note enchantée">
+                        <span class="badge">Nouveau</span>
+                    </div>
                     <div class="restaurant-info">
                         <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                        <span class="badge">Nouveau</span></a>
-                        <button class="favorite-button favorite"><i class="fa-regular fa-heart"></i></button>
+                        <p>Charonne</p></a>
+                        <input type="checkbox" class="favorite-checkbox" id="favorite2">
+                        <label for="favorite2" class="favorite-button">
+                            <i class="far fa-heart heart-empty"></i>
+                            <i class="fas fa-heart heart-filled"></i>
+                        </label>  
                     </div>
                 </div>
 
                 
                 <div class="restaurant">
-                    <a href="./restaurants/à-la-française/lafrancaise.html">
+                    <a href="./restaurants/a-la-française/lafrancaise.html">
                     <img src="./assets/images/ohmyfood/images/restaurants/lafrancaise.jpg" alt="À la française">
                     <div class="restaurant-info">
                         <h3>À la française</h3>
                         <p>Cité Rouge</p></a>
-                        <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+                        <input type="checkbox" class="favorite-checkbox" id="favorite3">
+                        <label for="favorite3" class="favorite-button">
+                            <i class="far fa-heart heart-empty"></i>
+                            <i class="fas fa-heart heart-filled"></i>
+                        </label>   
                     </div>
                 </div>
 
                 
                 <div class="restaurant">
-                    <a href="./restaurants/le-délice-des-sens/ledelicedessens.html">
+                    <a href="./restaurants/le-delice-des-sens/ledelicedessens.html">
                     <img src="./assets/images/ohmyfood/images/restaurants/ledelice.jpg" alt="Le délice des sens">
                     <div class="restaurant-info">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p></a>
-                        <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+                        <input type="checkbox" class="favorite-checkbox" id="favorite4">
+                        <label for="favorite4" class="favorite-button">
+                            <i class="far fa-heart heart-empty"></i>
+                            <i class="fas fa-heart heart-filled"></i>
+                        </label>    
                     </div>
                 </div>
             </div>
@@ -113,10 +126,10 @@
         <nav>
             <h4>Ohmyfood</h4>
             <ul class="liste">
-                <li><a href="#"><i class="fa-solid fa-utensils icon-footer"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fa-solid fa-handshake-angle icon-footer"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-utensils icon-footer"></i><span class="bas">Trouver un restaurant</span> </a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle icon-footer"></i><span class="bas">Devenir partenaire</span></a></li>
+                <li><a href="#"><span class="bas">Mentions légales</span></a></li>
+                <li><a href="#"><span class="bas">Contact</span></a></li>
             </ul>
         </nav>
     </footer>

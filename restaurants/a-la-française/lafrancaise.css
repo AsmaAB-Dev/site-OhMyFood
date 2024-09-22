@@ -11,7 +11,7 @@ body {
 
 }
 
-/**** Font-family******/
+/**** font family****/
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -116,7 +116,7 @@ header img{
 }
 
 /***** Body ****/
-main {
+main{
     padding: 0px;
 }
 .restaurant-img{
@@ -127,7 +127,7 @@ main {
     height: 380px;
     max-width: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: inherit;
 }
 .restaurant-menu{
     display: flex;
@@ -191,7 +191,7 @@ h1 {
     position: absolute; 
     top: 0;
     left: 0;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
 .heart-filled {
     color: #b24de6; 
@@ -236,8 +236,6 @@ h2 {
     font-weight: bold;
     margin-right: 10px;
 }
-
-/**** Animation CSS****/
 .order-button {
     background-color: #ab47bc;
     color: #fff;
@@ -269,8 +267,6 @@ h4{
     height: 27px;
     font-family: "Shrikhand", serif;
     margin-left: 70px;
-
-
 }
 footer nav{
     width: 100%;
@@ -279,7 +275,6 @@ footer nav{
     display: flex;
     flex-direction: row-reverse;
 }
-
 footer nav ul {
     display: flex;
     margin-left: 25%;
@@ -292,6 +287,7 @@ footer nav ul {
 .icon-footer{
     margin-right: 5px;
 }
+
 .bas{
     white-space: nowrap;
 }
@@ -441,6 +437,7 @@ footer nav ul li a {
         flex-direction: column;
         padding-top: 30px;
     }
+    
     footer nav ul {
         margin-left: 20px;
         display: flex;
@@ -462,7 +459,8 @@ footer nav ul li a {
     }
     }
     
-/***** *********responsive mobile**********/
+    
+/***** small devices****/
 @media (max-width: 767.98px) {
 /****** Entete *****/
 header img{
@@ -500,6 +498,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding-left: 20%;
     padding-left: 0%;
 }
 h1 {

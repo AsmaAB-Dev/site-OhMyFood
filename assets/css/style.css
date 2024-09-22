@@ -8,6 +8,8 @@ body {
     font-family: "Roboto", sans-serif;
 
 }
+
+/* Font-family*/
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -84,26 +86,24 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
 /* Entete */
 
 header {
-    height: 113px;
+    height: 146px;
     width: 100%;
-    
 }
-
 .logo{
-    height: 63px;
     width: 100%;
+    height: 96px;
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 header img{
-    width: 15%;
-    height: 40%;
-    margin-top: 18px;
+    width: 200px;
+    height: 34.2px;
 }
-
 header .location {
     font-size: 16px;
     background-color: rgba(234, 234, 234, 1);
@@ -121,25 +121,24 @@ header .location {
     text-align: center;
     width: 100%;
     background-color: rgb(248, 245, 245);
-    height: 280px;
+    height: 260px;
 }
-
 .intro h1 {
-    font-size: 34px;
+    font-size: 40px;
     padding-top: 40px;
     margin-left: 10px;
     margin-bottom: 30px;
+    text-align: center;
 }
-
 .intro p {
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
     margin-bottom: 30px;
 }
-/***** ANIMATION CSS 1******/
 
+/***** ANIMATION CSS 1******/
 .explore-button {
-    background-color: #b24de6;
+    background-color: #9356DC;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -148,35 +147,34 @@ header .location {
     border: none;
     width: 218px;
     height: 50px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
-
 .explore-button:hover {
-    background-color:  #c082e6;
-    cursor: pointer;
+    background-color: #c082e6;
+    color: #f2e6ff;
+    transform: scale(1.05); 
 }
+
 /* fonctionnement*/
-
 .fonctionnement {
-
-    margin-top: 40px;
-    height: 200px;
-    width: 100%;
+    width:100%;
+    height:228.38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .fonctionnement h2 {
     font-size: 24px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-top: 40px;
+    width: 73%;
 }
-
 .steps {
     display: flex;
-    width: 100%;
-    margin-left: 30px;
     gap: 20px;
+    width: 80%;
+    justify-content: center;
 }
-
 .step {
     display: flex;
     align-items: center;
@@ -185,7 +183,6 @@ header .location {
     border-radius: 25px;
     width: 30%;
 }
-
 .step .number {
     width: 24px;
     height: 24px;
@@ -196,6 +193,8 @@ header .location {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    position: relative;
+    left: 12px;
 }
 .search-button{
     background-color: #eee;
@@ -206,66 +205,416 @@ header .location {
     font-size: 16px;
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    gap: 10px;
 }
 .step-icon{
     margin-right: 10px;
 }
 
+/**** Restaurants*****/
+.restaurants {
+    background-color: rgb(248, 245, 245);
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.restaurants h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 73%;
+}
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 90%;
+}
+.restaurant {
+    margin-bottom: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 251px;
+    margin-left: 30px;
+    width: 39%;
+    border-radius: 20px 20px 20px 20px;
+}
+.restaurant-badge{
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 20px 20px;
+}
+.restaurant img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.restaurant-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 18px;
+    margin-top: 8px;
+    height: 50px;
+}
+.restaurant-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: black;
+}
+.restaurant-info p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.restaurant a{
+    text-decoration: none;
+    width: 100%;
+}
+.badge {
+    background-color: #5ef6c3;
+    color: rgb(255, 255, 255);
+    padding: 2px 8px;
+    width: 70px;
+    font-size: 12px;
+    position: relative;
+    left: 80%;
+    bottom: 150px;
+}
+
+
+/**** ANIMATION CSS 2****/
+.favorite-checkbox {
+    display: none; 
+}
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    width: 30px;
+    top: 10px;
+}
+.heart-empty, .heart-filled {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+.heart-filled {
+    color: #b24de6; 
+    opacity: 0;
+}
+.favorite-checkbox:checked + .favorite-button .heart-empty {
+    opacity: 0;
+}
+.favorite-checkbox:checked + .favorite-button .heart-filled {
+    opacity: 1; 
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(43, 42, 42);
+    height: 114px;
+}
+h4{
+    color: white;
+    width: 139px;
+    height: 27px;
+    font-family: "Shrikhand", serif;
+    margin-left: 70px;
+}
+footer nav{
+    width: 100%;
+    height: 114px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer nav ul {
+    display: flex;
+    margin-right: 15px;
+    line-height: 20px;
+    font-size: 16px;
+    gap: 30px;
+    list-style-type: none;
+}
+.icon-footer{
+    margin-right: 5px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: #f8f5fa;
+    display: flex;
+    align-items: center;
+}
 
 /************************************************************************/
-/***** small devices****/
+/***************** responsive tablette*********/
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Entete */
+    header img {
+        width: 197px;
+        height: 36px;
+    }
+    .location {
+        box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Introduction */
+    .intro h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+    .intro p {
+        font-size: 18px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* Fonctionnement */
+    .fonctionnement {
+        height: 250px;
+        width: 95%;
+        padding: 0px 0px 0px 0px;
+    }
+    .fonctionnement h2{
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        width: 85%;
+    }
+    .steps {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .step {
+        margin-bottom: 20px;
+        height: 73px;
+        width: 33%;
+        border-radius: 25px;
+    }
+    .step .number {
+        width: 24px;
+        position: relative;
+        left: 12px;
+    }
+    .search-button {
+        background-color: #eee;
+        color: black;
+        width: 100%;
+        height: 73px;
+        border-radius: 25px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding-left: 8%;
+        gap: 5px;
+    }
+    .step-icon {
+        margin-right: 10px;
+    }
+
+    /* Restaurants */
+    .restaurants {
+        background-color: #eee;
+        width: 100%;
+        padding: 10px 30px 50px 40px;
+    }
+    .restaurants h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        width: 95%;
+    }
+    .restaurant-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .restaurant {
+        width: 45%;
+        margin-left: 2%;
+        height: 251px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .restaurant-badge{
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .restaurant img {
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .restaurant-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 25px;
+        margin-left: 18px;
+        margin-top: 8px;
+    }
+    .restaurant-info h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: black;
+    }
+    .restaurant-info p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    .restaurant a {
+        text-decoration: none;
+    }
+    .badge {
+        background-color: #5ef6c3;
+        color: rgb(255, 255, 255);
+        padding: 2px 8px;
+        width: 70px;
+        font-size: 12px;
+        position: relative;
+        left: 80%;
+        bottom: 150px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        background-color: rgb(43, 42, 42);
+        height: 114px;
+    }
+    h4 {
+        color: white;
+        width: 139px;
+        height: 27px;
+        margin-left: 20px;
+        padding-bottom: 40px;
+        font-family: "Shrikhand", serif;
+        font-size: 22px;
+    }
+    footer nav {
+        width: 100%;
+        height: 114px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    footer nav ul {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 15px;
+        line-height: 20px;
+        font-size: 16px;
+        gap: 10px;
+        list-style: none;
+        padding-top: 10px;
+    }
+    .icon-footer {
+        margin-right: 10px;
+    }
+    footer nav ul li a {
+        text-decoration: none;
+        color: #f8f5fa;
+    }
+}
+
+/****************responsive mobiel**********/
 @media (max-width: 767.98px) {
 
 /* Entete */
-
+header{
+    width: 100%;
+    height: 113px;
+    padding: 0px 0px 0.5px 0px;
+    gap: 0px;
+}
 header img{
-    width: 40%;
-
+    width: 197px;
+    height: 36px;
+    top: 14px;
+    left: 89px;
+    padding: 0px 19px 0px 16px;
+    gap: 10px;
+}
+.logo{
+    width: 100%;
+    height: 63px;
+    padding: 14px 89px 13px 89px;
+    gap: 10px;
+}
+.location{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height:50px;
+    top: 62.5px;
+    left: -0.5px;
+    gap: 17px;
 }
 
 /* Introduction */
-
 .intro h1 {
     font-size: 24px;
     margin-bottom: 10px;
     padding-top: 30px;
 }
-
 .intro p {
     font-size: 18px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 /* fonctionnement*/
-
 .fonctionnement {
     height: 440px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.fonctionnement h2{
+    margin-left: 30px;
 }
 .steps {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 30px;
+    width: 90%;
+    margin-left: 5%;
 }
-
 .step {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
     height: 73px;
-
+    width: 100%;
     border-radius: 25px;
 }
-
 .step .number {
     width: 24px;
-    height: 24px;
-    background-color: #c25ef6;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+    position: relative;
+    left: 12px;
 }
 .search-button{
     background-color: #eee;
@@ -273,62 +622,60 @@ header img{
     width: 100%;
     height: 73px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .step-icon{
     margin-right: 10px;
 }
 
 /* Restaurants */
-
 .restaurants {
-
     background-color: #eee;
-}
-
-.restaurants h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    padding-top: 30px;
-}
-
-.restaurant-list {
+    padding-bottom: 40px;
+    padding: 0px;
+    height: 1300px;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    width: 100%;
 }
-
-.restaurant {
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 251px;
+.restaurants h2 {
+    font-size: 24px;
     margin-left: 30px;
 }
-
+.restaurant-list {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.restaurant {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+}
 .restaurant img {
     width: 100%;
     height: 180px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 .restaurant-info {
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 18px;
+    margin-top: 8px;
 }
-
 .restaurant-info h3 {
     font-size: 18px;
     margin-bottom: 5px;
     color: black;
 }
-
 .restaurant-info p {
     font-size: 17px;
     color: #666;
@@ -337,7 +684,6 @@ header img{
 .restaurant a{
     text-decoration: none;
 }
-
 .badge {
     background-color: #5ef6c3;
     color: rgb(255, 255, 255);
@@ -345,51 +691,32 @@ header img{
     width: 70px;
     font-size: 12px;
     position: relative;
-    bottom: 230px;
-    left: 250px;
-
+    left: 80%;
+    bottom: 150px;
 }
-
-/**** ANIMATION CSS 2****/
-.favorite-button {
-    background: none;
-    border: none;
-    color: #080808;
-    cursor: pointer;
-    font-size: 24px;
-    left: 280px;
-    bottom: 60px;
-    position: relative;
-    width: 30px;
-    transition: #b24de6 0.3s ease;
-}
-
-.favorite-button.active {
-    color: #b24de6;
-    cursor: pointer;
-}
-
 
 /* Footer */
-
 footer {
     width: 100%;
     background-color: rgb(43, 42, 42);
+    height: 200px;
 }
 h4{
     color: white;
     width: 139px;
     height: 27px;
     margin-left: 20px;
-    padding-top: 20px;
     padding-bottom: 40px;
     font-family: "Shrikhand", serif;
+    font-size: 22px;
 }
 footer nav{
     width: 100%;
-    height: 186px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
 }
-
 footer nav ul {
     margin-left: 20px;
     display: flex;
@@ -404,7 +731,6 @@ footer nav ul {
 .icon-footer{
     margin-right: 10px;
 }
-
 footer nav ul li a {
     text-decoration: none;
     color: #f8f5fa;

@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="lafrancaise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ledelice.css">
 </head>
 <body>
     <header>
+        <div class="back">
+            <a href="../../index.html">
+            <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
         <div class="logo">
             <img src="./ohmyfood.png" alt="logo">
         </div>
@@ -23,41 +27,45 @@
     <main>
         <section class="restaurant-menu">
         <div class="restaurant-img">
-            <img alt="restaurant-img" src="lafrancaise.jpg" class="lapalette">
+            <img alt="restaurant-img" src="ledelice.jpg" class="lapalette">
         </div>
         <section class="menu">
             <div class="menu-title">
-                <h1>A la française</h1>
-                <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+                <h1>Le délice des sens</h1>
+                <input type="checkbox" class="favorite-checkbox" id="favorite1">
+                <label for="favorite1" class="favorite-button">
+                    <i class="far fa-heart heart-empty"></i>
+                    <i class="fas fa-heart heart-filled"></i>
+                </label>  
             </div>
             
             <div class="menu-section">
                 <h2>ENTRÉES</h2>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p>Tartare de poulpe acidulé</p>
+                        <p>Tartare de thon</p>
                     </div>
                     <div class="item-description">
-                        <p>Aux zestes d'orange</p>
+                        <p>Assaisonné au yuzu</p>
                         <p class="item-price">25€</p>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p>Velouté de légumes d'antan</p>
+                        <p>Bouchée de homard croustillant</p>
                     </div>
                     <div class="item-description">
-                        <p >Carotte, panais, topinambour</p>
+                        <p >Et sa farandole de petits légumes</p>
                         <p class="item-price">35€</p>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p >Soupe à l'oignon</p>
+                        <p >Poulet roti aux herbes de Provence/p>
                     </div>
                     <div class="item-description">
-                        <p >Revisitée</p>
-                        <p class="item-price">20€</p>
+                        <p >Et sa crème de truffe</p>
+                        <p class="item-price">40€</p>
                     </div>
                 </div>
             </div>
@@ -66,28 +74,28 @@
                 <h2>PLATS</h2>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p>Coquilles Saint-Jacques</p>
+                        <p>Poulet roti aux herbes de Provence</p>
                     </div>
                     <div class="item-description">
-                        <p>Accompagnées d'une purée de panais</p>
+                        <p>Et sa crème de truffe</p>
                         <p class="item-price">40€</p>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p>Magret de canard</p>
+                        <p>Langouste rotie</p>
                     </div>
                     <div class="item-description">
-                        <p>Et parmentier de pommes de terre</p>
+                        <p>Et ses légumes de saison</p>
                         <p class="item-price">35€</p>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p >Pigeonneau d'Ile-et-Vilaine</p>
+                        <p >Cote de boeuf Angus</p>
                     </div>
                     <div class="item-description">
-                        <p >Sur son lit de gnocchis aux légumes</p>
+                        <p >Et sa purée de panais</p>
                         <p class="item-price">44€</p>
                     </div>
                 </div>
@@ -97,28 +105,28 @@
                 <h2>DESSERTS</h2>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p >Pétales de violettes glacés</p>
+                        <p >Farandole de desserts</p>
                     </div>
                     <div class="item-description">
-                        <p >Et purée de noisettes</p>
+                        <p >Du chef</p>
                         <p class="item-price">18€</p>
                     </div>   
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p >Fondant au chocolat</p>
+                        <p >Crème brulée</p>
                     </div>
                     <div class="item-description">
-                        <p >revisité</p>
+                        <p >Revisité</p>
                         <p class="item-price">22€</p>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-name">
-                        <p >Millefeuille croustillant</p>
+                        <p >Tiramisu</p>
                     </div>
                     <div class="item-description">
-                        <p >Myrtilles et pate d'amande</p>
+                        <p >A la noisette</p>
                         <p class="item-price">23€</p>
                     </div>    
                 </div>
@@ -129,12 +137,12 @@
     </main>
     <footer>
         <nav>
-            <h3>Ohmyfood</h3>
+            <h4>Ohmyfood</h4>
             <ul class="liste">
-                <li><a href="#"><i class="fa-solid fa-utensils icon-footer"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fa-solid fa-handshake-angle icon-footer"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-utensils icon-footer"></i><span class="bas">Trouver un restaurant</span> </a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle icon-footer"></i><span class="bas">Devenir partenaire</span></a></li>
+                <li><a href="#"><span class="bas">Mentions légales</span></a></li>
+                <li><a href="#"><span class="bas">Contact</span></a></li>
             </ul>
         </nav>
     </footer>
